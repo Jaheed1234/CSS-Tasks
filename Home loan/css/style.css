@@ -1,0 +1,271 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f6f7f9;
+}
+.border{
+    width:100px;
+    height:3px;
+    background: #f3561f;
+    margin:20px auto;
+}
+/*Header Styles*/
+header ul li{
+    padding:18px;
+}
+header ul{
+    background: #f3561f;  
+    display: flex;
+    list-style-type: none;
+    padding:0px 60px;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+header .last{
+    margin-left:auto
+}
+@media (max-width:576px){
+
+    header ul{
+        padding:0px 10px;
+    }
+
+
+}
+/*Navbar*/
+nav{
+    display: flex;
+    justify-content:space-between;
+    padding:0px 60px;
+    box-shadow: 0 5px 5px rgb(192, 190, 190);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px;
+}
+nav>a{
+    padding: 20px;
+    font-size: 30px;  
+}
+nav a{
+    text-decoration: none;
+    color:black
+}
+
+@media (max-width:992px){
+    nav{
+        display: flex;
+        justify-content:start;
+        flex-direction: column;
+        padding:0px 10px;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+/*banner styles*/
+#banner .main{
+    padding:20px 35px 20px 50px;
+    margin: 20px 30px 20px 50px;
+    color: #e4e2df;
+}
+#banner .main h1{
+    width: 400px
+}
+#banner .main p{
+    padding: 10px 0;
+    width: 500px;
+}
+#banner a{
+    text-decoration: none;
+    color: #e4e2df;
+}
+#banner{
+    background-image: url(../images/img2.jpg);
+    background-attachment: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 30px;
+}
+@media (max-width:992px){
+
+    #banner .main{
+        width:100%;
+       padding: 20px;
+    }
+}
+/*Offer Styles*/
+#offer .title{
+    text-align: center;
+    margin:20px 0px;
+}
+#offer .row{
+    display: flex;
+    padding:0px 60px;
+    flex-wrap: wrap;
+}
+#offer{
+    margin: 40px 0px;
+}
+#offer .col{
+    width:33.33%;
+}
+#offer .style{
+    background: white;
+    padding: 30px;
+    margin:20px;
+    box-shadow: 0 0 10px rgb(183, 180, 180);
+
+}
+#offer i{
+    color:red;
+    font-size: 35px;
+}
+#offer  h3{
+    margin:15px 0px;
+}
+#offer .style p{
+    color:rgba(0,0,0,0.5)
+}
+@media (max-width:576px){
+
+    #offer .col{
+        width:100%;
+    }
+    #offer .row{
+        padding:0px 10px;
+    }
+
+
+}
+@media (min-width:576px) and (max-width:992px){
+    #offer .col{
+        width:50%;
+    }
+    #offer .row{
+        padding:0px 20px;
+    }
+}
+/*Application Section Styles*/
+#application .title{
+    text-align: center;
+    margin:20px 0px;
+}
+#application .row{
+    display: flex;
+    padding:0px 60px;
+    flex-wrap: wrap;
+}
+#application .col{
+    width:50%;
+}
+#application img{
+    width:100%;
+    height: 380px;
+}
+#application .row .card{
+    border : 2px solid #dfdfdf;
+    margin : 0px 20px 10px;
+}
+#application .card .card-header{
+    background: #f7f7f7;
+    padding:20px;
+    border-bottom: 2px solid #dfdfdf;
+}
+#application .card .card-body{
+    background: white;
+    padding:30px;
+}
+#application .card .hide{
+    display: none;
+}
+#application i{
+    color:#f3561f;
+    margin-right: 10px;
+}
+@media (max-width:576px){
+
+    #application .col{
+        width:100%;
+    }
+    #application .row{
+        padding:0px 10px;
+    }
+
+
+}
+@media (min-width:576px) and (max-width:992px){
+    #application .col{
+        width:100%;
+    }
+    #application .row{
+        padding:0px 20px;
+    }
+
+    
+    
+}
+/*News Styles*/
+#news .title{
+    text-align: center;
+    margin:20px 0px;
+}
+#news .row{
+    display: flex;
+    padding:0px 60px;
+    flex-wrap: wrap;
+}
+#news .col{
+    width:33.33%;
+}
+#news img{
+    width:100%;
+    height:250px;
+}
+#news .card{
+    border:2px solid #dfdfdf;
+    margin: 10px 20px;
+}
+#news .card-footer{
+    background: #f7f7f7;
+    padding: 20px;
+    border-top:2px solid #dfdfdf;
+}
+#news .card-body{
+    background: white;
+    padding: 30px;
+}
+#news .card-body h3{
+    color:#f3561f;
+    margin-bottom: 10px;
+}
+@media (max-width:576px){
+
+    #news .col{
+        width:100%;
+    }
+    #news .row{
+        padding:0px 10px;
+    }
+}
+@media (min-width:576px) and (max-width:992px){
+    #news .col{
+        width:100%;
+    }
+    #news .row{
+        padding:0px 20px;
+    }
+}
